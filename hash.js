@@ -45,11 +45,15 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-
+/*  function to replace char in middle of strings.*/
   function replaceAt(string, index, replace) {
     return string.substring(0, index) + replace + string.substring(index + 1);
   }
 
+/**
+ * gives next String according to the problem.
+ * @param {string} s 
+ */
 function getNextString(s){
     var next = s;
     for (var i = next.length-1; i>=0; i--){
@@ -69,7 +73,8 @@ function getNextString(s){
 
 
 
-
+/*main function.
+*/
 function findString(n) {
     
     var closestString = "aaaaaaaa";
